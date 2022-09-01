@@ -1,0 +1,55 @@
+//--------------------------------------------------------------------------------------------------------------------------------
+// 메세지 삭제
+//else if (commandName === '삭제') {
+	// 	if(!interaction.member.permissions.has('MANAGE_MESSAGES')) return interaction.reply({ content:"이 명령을 사용할 수 있는 'MANAGE_MESSAGES' 권한이 없습니다!"})
+	// 	if(!interaction.guild.user.permissions.has('MANAGE_MESSAGES')) return interaction.reply({ content:"봇이 명령을 사용할 수 있는 'MANAGE_MESSAGES' 권한이 없습니다!"})
+	// 	let amount = interaction.options.getInteger('amount')
+	// 	if (parseInt(amount) > 99) {
+	// 		return interaction.reply({ content: '**난 오직 99개까지만 지울수 있어!', ephemeral: true})
+	// 	} else{
+	// 		let { size } = await interaction.channel.bulkDelete(amount)
+	// 		await interaction.reply({ content: `Deleted ${size} messages.`, ephemeral: true})
+	// 	}
+	// }
+
+//--------------------------------------------------------------------------------------------------------------------------------
+// 임베드 예시
+// const { Client, GatewayIntentBits, EmbedType, Embed } = require('discord.js');
+// const { token } = require('./config.json');
+// const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+
+
+// client.on('ready', () => {
+//     console.log(`Logged in as ${client.user.tag}!`);
+// });
+
+// client.on('interactionCreate', async interaction => {
+//     if (!interaction.isChatInputCommand()) return;
+
+// 	const { commandName } = interaction;
+//     if (commandName === "봇상세정보") {
+//         await interaction.reply()
+//             const embed = new Embed.MessageEmbed()
+//                 .setAuthor("Yoru Bot🤘", "https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd4080f8efb365751/5ff5660bb47cdf7fc7d6c3dc/V_AGENTS_587x900_yoru.png")
+//                 .setTitle("Yoru Bot 프로필")
+//                 .setURL("https://www.youtube.com/channel/UCe7rCca_75dcf9ZUxl0ldmw")
+//                 .setColor(0x00D8FF)
+//                 .setDescription("안녕하세요 Yoru Bot입니다. 저를 소개하겠습니다🙌")
+//                 .setThumbnail("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd4080f8efb365751/5ff5660bb47cdf7fc7d6c3dc/V_AGENTS_587x900_yoru.png")
+//                 .addFields(
+//                     {name: "취미", value: "대답하기🥴", inline: true},
+//                     {name: "특기", value: "로봇🔌", inline: true},
+//                     {name: "혈액형", value: "O형🅾️", inline: true},
+//                     {name: "사는곳", value: "컴퓨터💻", inline: true},
+//                     {name: "좋아하는것", value: "전기⚡️", inline: true},
+//                     {name: "싫어하는것", value: "물💧", inline: true}
+//                 )
+//                 .setImage("https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd4080f8efb365751/5ff5660bb47cdf7fc7d6c3dc/V_AGENTS_587x900_yoru.png")
+//                 .setTimestamp(new Date())
+//                 .setFooter("반가워요😍","https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/bltd4080f8efb365751/5ff5660bb47cdf7fc7d6c3dc/V_AGENTS_587x900_yoru.png")
+
+//                 client.guilds.send(embed);
+//     }
+// });
+
+// client.login(token);
